@@ -2,17 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John's Personal Site</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Quicksand:wght@500&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>John M Caldwell, Jr</h1>
-    <p><em> Computer and Networking Specialist, and programmer (html, css, js, and python) </em> </p>
-    <p>John Caldwell is an experienced with network administration and programming.   </p>
-    <hr size="3"
-    <h3><strong>Education</strong></h3>
-
-    
-</body>
-</html>
+    <div id="container">
+        <div id="title_bar">
+            <img id="profile_picture" src="{{url_for('static', filename='website_selfie.jpg')}}" />
+        </div>
+        <div>
+            <h1 id="title">{{PORTFOLIO_PERSON_NAME}}</h1>
+        </div>
+        <div>
+            <h2 id="profession">Software Engineer - Python</h2>
+        </div>
+        <div id="summary_box">
+            <p id="summary">Results-oriented and detail-driven Python Programmer with a solid foundation in Python
+                programming and a keen interest in solving complex problems through efficient coding. Adept at adhering
+                to coding best practices, collaborating effectively within team environments, and demonstrating a
+                strong commitment to continuous learning. Possessing proficiency in web development concepts,
+                database management, and API integration, I am eager to contribute my technical skills and passion
+                for innovation to a dynamic entry-level role. Strong analytical and problem-solving abilities,
+                combined with excellent communication skills, make me an asset in contributing to the success of
+                software development projects.</p>
+        </div>
+    </div>
